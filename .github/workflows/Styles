@@ -1,0 +1,111 @@
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.25; /* soft transparency */
+    z-index: -1; /* keeps background behind all content */
+}
+
+/* ================================
+   Base Styling
+   ================================ */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    color: #222;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+p, li {
+    font-size: 1rem;
+}
+
+/* ================================
+   Header
+   ================================ */
+header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p a {
+    margin: 0 10px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ================================
+   Sections
+   ================================ */
+section {
+    background: rgba(255, 255, 255, 0.90);
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+section h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+ul li, ol li {
+    margin-bottom: 6px;
+}
+
+/* ================================
+   Links
+   ================================ */
+a {
+    color: #005aff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #003bb3;
+}
+
+/* ================================
+   Footer
+   ================================ */
+footer {
+    text-align: center;
+    margin: 40px 0;
+    color: #444;
+    font-size: 0.9rem;
+}
